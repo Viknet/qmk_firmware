@@ -401,7 +401,7 @@ bool process_tapping(keyrecord_t *keyp) {
                 } else {
                     // should none in buffer
                     // FIX: interrupted when other key is pressed
-                    tapping_key.tap.interrupted = true;
+                    // tapping_key.tap.interrupted = true;
                     process_record(keyp);
                     return true;
                 }

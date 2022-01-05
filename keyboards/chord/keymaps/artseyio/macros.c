@@ -10,166 +10,166 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         if (!is_shift_lock_active) {
           is_shift_lock_active = true;
-          register_code(KC_LSFT);
+          register_code16(KC_LSFT);
         }
         else{
           is_shift_lock_active = false;
-          unregister_code(KC_LSFT);
+          unregister_code16(KC_LSFT);
         }
       }
     break;
     case A_BASE_AR:
       if(record->event.pressed) {
-        register_code(KC_F);
+        register_code16(KC_F);
       } else {
-        unregister_code(KC_F);
+        unregister_code16(KC_F);
       }
       break;
     case A_BASE_AS:
       if(record->event.pressed) {
-        register_code(KC_W);
+        register_code16(KC_W);
       } else {
-        unregister_code(KC_W);
+        unregister_code16(KC_W);
       }
       break;
     case A_BASE_RT:
       if(record->event.pressed) {
-        register_code(KC_G);
+        register_code16(KC_G);
       } else {
-        unregister_code(KC_G);
+        unregister_code16(KC_G);
       }
       break;
     case A_BASE_RS:
       if(record->event.pressed) {
-        register_code(KC_V);
+        register_code16(KC_V);
       } else {
-        unregister_code(KC_V);
+        unregister_code16(KC_V);
       }
       break;
     case A_BASE_RI:
       if(record->event.pressed) {
-        register_code(KC_DEL);
+        register_code16(KC_DEL);
       } else {
-        unregister_code(KC_DEL);
+        unregister_code16(KC_DEL);
       }
       break;
     case A_BASE_TS:
       if(record->event.pressed) {
-        register_code(KC_J);
+        register_code16(KC_J);
       } else {
-        unregister_code(KC_J);
+        unregister_code16(KC_J);
       }
       break;
     case A_BASE_ART:
       if(record->event.pressed) {
-        register_code(KC_D);
+        register_code16(KC_D);
       } else {
-        unregister_code(KC_D);
+        unregister_code16(KC_D);
       }
       break;
     case A_BASE_ATS:
       if(record->event.pressed) {
-        register_code(KC_Q);
+        register_code16(KC_Q);
       } else {
-        unregister_code(KC_Q);
+        unregister_code16(KC_Q);
       }
       break;
     case A_BASE_RTS:
       if(record->event.pressed) {
-        register_code(KC_X);
+        register_code16(KC_X);
       } else {
-        unregister_code(KC_X);
+        unregister_code16(KC_X);
       }
       break;
     case A_BASE_EY:
       if(record->event.pressed) {
-        register_code(KC_C);
+        register_code16(KC_C);
       } else {
-        unregister_code(KC_C);
+        unregister_code16(KC_C);
       }
       break;
     case A_BASE_EI:
       if(record->event.pressed) {
-        register_code(KC_H);
+        register_code16(KC_H);
       } else {
-        unregister_code(KC_H);
+        unregister_code16(KC_H);
       }
       break;
     case A_BASE_EO:
       if(record->event.pressed) {
-        register_code(KC_B);
+        register_code16(KC_B);
       } else {
-        unregister_code(KC_B);
+        unregister_code16(KC_B);
       }
       break;
     case A_BASE_YI:
       if(record->event.pressed) {
-        register_code(KC_U);
+        register_code16(KC_U);
       } else {
-        unregister_code(KC_U);
+        unregister_code16(KC_U);
       }
       break;
     case A_BASE_YO:
       if(record->event.pressed) {
-        register_code(KC_K);
+        register_code16(KC_K);
       } else {
-        unregister_code(KC_K);
+        unregister_code16(KC_K);
       }
       break;
     case A_BASE_IO:
       if(record->event.pressed) {
-        register_code(KC_N);
+        register_code16(KC_N);
       } else {
-        unregister_code(KC_N);
+        unregister_code16(KC_N);
       }
       break;
     case A_BASE_EYI:
       if(record->event.pressed) {
-        register_code(KC_L);
+        register_code16(KC_L);
       } else {
-        unregister_code(KC_L);
+        unregister_code16(KC_L);
       }
       break;
     case A_BASE_EIO:
       if(record->event.pressed) {
-        register_code(KC_P);
+        register_code16(KC_P);
       } else {
-        unregister_code(KC_P);
+        unregister_code16(KC_P);
       }
       break;
     case A_BASE_YIO:
       if(record->event.pressed) {
-        register_code(KC_M);
+        register_code16(KC_M);
       } else {
-        unregister_code(KC_M);
+        unregister_code16(KC_M);
       }
       break;
     case A_BASE_ARTS:
       if(record->event.pressed) {
-        register_code(KC_Z);
+        register_code16(KC_Z);
       } else {
-        unregister_code(KC_Z);
+        unregister_code16(KC_Z);
       }
       break;
     case A_BASE_AYI:
       if(record->event.pressed) {
-        register_code(KC_QUOT);
+        register_code16(KC_QUOT);
       } else {
-        unregister_code(KC_QUOT);
+        unregister_code16(KC_QUOT);
       }
       break;
     case A_BASE_AI:
       if(record->event.pressed) {
-        register_code(KC_COMMA);
+        register_code16(KC_COMMA);
       } else {
-        unregister_code(KC_COMMA);
+        unregister_code16(KC_COMMA);
       }
       break;
     case A_BASE_AY:
       if(record->event.pressed) {
-        register_code(KC_DOT);
+        register_code16(KC_DOT);
       } else {
-        unregister_code(KC_DOT);
+        unregister_code16(KC_DOT);
       }
       break;
     case A_BASE_TI:
@@ -179,345 +179,373 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
     case A_BASE_AO:
       if(record->event.pressed) {
-        register_code(KC_SLSH);
+        register_code16(KC_SLSH);
       } else {
-        unregister_code(KC_SLSH);
+        unregister_code16(KC_SLSH);
       }
       break;
     case A_BASE_RE:
       if(record->event.pressed) {
-        register_code(KC_BSPC);
+        register_code16(KC_BSPC);
       } else {
-        unregister_code(KC_BSPC);
+        unregister_code16(KC_BSPC);
       }
       break;
     case A_NUM_RE:
       if(record->event.pressed) {
-        register_code(KC_BSPC);
+        register_code16(KC_BSPC);
       } else {
-        unregister_code(KC_BSPC);
+        unregister_code16(KC_BSPC);
       }
       break;
     case A_SYM_RE:
       if(record->event.pressed) {
-        register_code(KC_BSPC);
+        register_code16(KC_BSPC);
       } else {
-        unregister_code(KC_BSPC);
+        unregister_code16(KC_BSPC);
       }
       break;
     case A_BRAC_RE:
       if(record->event.pressed) {
-        register_code(KC_BSPC);
+        register_code16(KC_BSPC);
       } else {
-        unregister_code(KC_BSPC);
+        unregister_code16(KC_BSPC);
       }
       break;
     case A_NAV_RE:
       if(record->event.pressed) {
-        register_code(KC_BSPC);
+        register_code16(KC_BSPC);
       } else {
-        unregister_code(KC_BSPC);
+        unregister_code16(KC_BSPC);
       }
       break;
     case A_MOU_RE:
       if(record->event.pressed) {
-        register_code(KC_BSPC);
+        register_code16(KC_BSPC);
       } else {
-        unregister_code(KC_BSPC);
+        unregister_code16(KC_BSPC);
       }
       break;
     case A_CUSTOM_RE:
       if(record->event.pressed) {
-        register_code(KC_BSPC);
+        register_code16(KC_BSPC);
       } else {
-        unregister_code(KC_BSPC);
+        unregister_code16(KC_BSPC);
       }
       break;
-    case A_BASE_RTSE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LSHIFT));
-      }
+    case A_BASE_TE:
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LSFT),
+        });
       break;
-    case A_NUM_RTSE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LSHIFT));
-      }
+    case A_NUM_TE:
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LSFT),
+        });
       break;
-    case A_SYM_RTSE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LSHIFT));
-      }
+    case A_SYM_TE:
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LSFT),
+        });
       break;
-    case A_BRAC_RTSE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LSHIFT));
-      }
+    case A_BRAC_TE:
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LSFT),
+        });
       break;
-    case A_NAV_RTSE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LSHIFT));
-      }
+    case A_NAV_TE:
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LSFT),
+        });
       break;
-    case A_MOU_RTSE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LSHIFT));
-      }
+    case A_MOU_TE:
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LSFT),
+        });
       break;
-    case A_CUSTOM_RTSE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LSHIFT));
-      }
+    case A_CUSTOM_TE:
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LSFT),
+        });
       break;
     case A_BASE_AE:
       if(record->event.pressed) {
-        register_code(KC_ENTER);
+        register_code16(KC_ENTER);
       } else {
-        unregister_code(KC_ENTER);
+        unregister_code16(KC_ENTER);
       }
       break;
     case A_NUM_AE:
       if(record->event.pressed) {
-        register_code(KC_ENTER);
+        register_code16(KC_ENTER);
       } else {
-        unregister_code(KC_ENTER);
+        unregister_code16(KC_ENTER);
       }
       break;
     case A_SYM_AE:
       if(record->event.pressed) {
-        register_code(KC_ENTER);
+        register_code16(KC_ENTER);
       } else {
-        unregister_code(KC_ENTER);
+        unregister_code16(KC_ENTER);
       }
       break;
     case A_BRAC_AE:
       if(record->event.pressed) {
-        register_code(KC_ENTER);
+        register_code16(KC_ENTER);
       } else {
-        unregister_code(KC_ENTER);
+        unregister_code16(KC_ENTER);
       }
       break;
     case A_NAV_AE:
       if(record->event.pressed) {
-        register_code(KC_ENTER);
+        register_code16(KC_ENTER);
       } else {
-        unregister_code(KC_ENTER);
+        unregister_code16(KC_ENTER);
       }
       break;
     case A_MOU_AE:
       if(record->event.pressed) {
-        register_code(KC_ENTER);
+        register_code16(KC_ENTER);
       } else {
-        unregister_code(KC_ENTER);
+        unregister_code16(KC_ENTER);
       }
       break;
     case A_CUSTOM_AE:
       if(record->event.pressed) {
-        register_code(KC_ENTER);
+        register_code16(KC_ENTER);
       } else {
-        unregister_code(KC_ENTER);
+        unregister_code16(KC_ENTER);
       }
       break;
     case A_BASE_ARO:
       if(record->event.pressed) {
-        register_code(KC_TAB);
+        register_code16(KC_TAB);
       } else {
-        unregister_code(KC_TAB);
+        unregister_code16(KC_TAB);
       }
       break;
     case A_NUM_ARO:
       if(record->event.pressed) {
-        register_code(KC_TAB);
+        register_code16(KC_TAB);
       } else {
-        unregister_code(KC_TAB);
+        unregister_code16(KC_TAB);
       }
       break;
     case A_SYM_ARO:
       if(record->event.pressed) {
-        register_code(KC_TAB);
+        register_code16(KC_TAB);
       } else {
-        unregister_code(KC_TAB);
+        unregister_code16(KC_TAB);
       }
       break;
     case A_BRAC_ARO:
       if(record->event.pressed) {
-        register_code(KC_TAB);
+        register_code16(KC_TAB);
       } else {
-        unregister_code(KC_TAB);
+        unregister_code16(KC_TAB);
       }
       break;
     case A_NAV_ARO:
       if(record->event.pressed) {
-        register_code(KC_TAB);
+        register_code16(KC_TAB);
       } else {
-        unregister_code(KC_TAB);
+        unregister_code16(KC_TAB);
       }
       break;
     case A_MOU_ARO:
       if(record->event.pressed) {
-        register_code(KC_TAB);
+        register_code16(KC_TAB);
       } else {
-        unregister_code(KC_TAB);
+        unregister_code16(KC_TAB);
       }
       break;
     case A_CUSTOM_ARO:
       if(record->event.pressed) {
-        register_code(KC_TAB);
+        register_code16(KC_TAB);
       } else {
-        unregister_code(KC_TAB);
+        unregister_code16(KC_TAB);
       }
       break;
     case A_BASE_SE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LCTRL));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LCTL),
+        });
       break;
     case A_NUM_SE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LCTRL));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LCTL),
+        });
       break;
     case A_SYM_SE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LCTRL));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LCTL),
+        });
       break;
     case A_BRAC_SE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LCTRL));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LCTL),
+        });
       break;
     case A_NAV_SE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LCTRL));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LCTL),
+        });
       break;
     case A_MOU_SE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LCTRL));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LCTL),
+        });
       break;
     case A_CUSTOM_SE:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LCTRL));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LCTL),
+        });
       break;
     case A_BASE_SY:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LGUI));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LGUI),
+        });
       break;
     case A_NUM_SY:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LGUI));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LGUI),
+        });
       break;
     case A_SYM_SY:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LGUI));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LGUI),
+        });
       break;
     case A_BRAC_SY:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LGUI));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LGUI),
+        });
       break;
     case A_NAV_SY:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LGUI));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LGUI),
+        });
       break;
     case A_MOU_SY:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LGUI));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LGUI),
+        });
       break;
     case A_CUSTOM_SY:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LGUI));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LGUI),
+        });
       break;
     case A_BASE_SI:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LALT));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LALT),
+        });
       break;
     case A_NUM_SI:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LALT));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LALT),
+        });
       break;
     case A_SYM_SI:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LALT));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LALT),
+        });
       break;
     case A_BRAC_SI:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LALT));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LALT),
+        });
       break;
     case A_NAV_SI:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LALT));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LALT),
+        });
       break;
     case A_MOU_SI:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LALT));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LALT),
+        });
       break;
     case A_CUSTOM_SI:
-      if(record->event.pressed) {
-        add_oneshot_mods(MOD_BIT(KC_LALT));
-      }
+      action_tapping_process((keyrecord_t){
+          .event = (keyevent_t){.pressed = record->event.pressed, .time = (timer_read() | 1),},
+          .keycode = OSM(MOD_LALT),
+        });
       break;
     case A_BASE_EYIO:
       if(record->event.pressed) {
-        register_code(KC_SPACE);
+        register_code16(KC_SPACE);
       } else {
-        unregister_code(KC_SPACE);
+        unregister_code16(KC_SPACE);
       }
       break;
     case A_NUM_EYIO:
       if(record->event.pressed) {
-        register_code(KC_SPACE);
+        register_code16(KC_SPACE);
       } else {
-        unregister_code(KC_SPACE);
+        unregister_code16(KC_SPACE);
       }
       break;
     case A_SYM_EYIO:
       if(record->event.pressed) {
-        register_code(KC_SPACE);
+        register_code16(KC_SPACE);
       } else {
-        unregister_code(KC_SPACE);
+        unregister_code16(KC_SPACE);
       }
       break;
     case A_BRAC_EYIO:
       if(record->event.pressed) {
-        register_code(KC_SPACE);
+        register_code16(KC_SPACE);
       } else {
-        unregister_code(KC_SPACE);
+        unregister_code16(KC_SPACE);
       }
       break;
     case A_NAV_EYIO:
       if(record->event.pressed) {
-        register_code(KC_SPACE);
+        register_code16(KC_SPACE);
       } else {
-        unregister_code(KC_SPACE);
+        unregister_code16(KC_SPACE);
       }
       break;
     case A_MOU_EYIO:
       if(record->event.pressed) {
-        register_code(KC_SPACE);
+        register_code16(KC_SPACE);
       } else {
-        unregister_code(KC_SPACE);
+        unregister_code16(KC_SPACE);
       }
       break;
     case A_CUSTOM_EYIO:
       if(record->event.pressed) {
-        register_code(KC_SPACE);
+        register_code16(KC_SPACE);
       } else {
-        unregister_code(KC_SPACE);
+        unregister_code16(KC_SPACE);
       }
       break;
     case A_BASE_RY:
@@ -599,30 +627,30 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
     case A_NUM_AR:
       if(record->event.pressed) {
-        register_code(KC_7);
+        register_code16(KC_7);
       } else {
-        unregister_code(KC_7);
+        unregister_code16(KC_7);
       }
       break;
     case A_NUM_RT:
       if(record->event.pressed) {
-        register_code(KC_8);
+        register_code16(KC_8);
       } else {
-        unregister_code(KC_8);
+        unregister_code16(KC_8);
       }
       break;
     case A_NUM_EY:
       if(record->event.pressed) {
-        register_code(KC_9);
+        register_code16(KC_9);
       } else {
-        unregister_code(KC_9);
+        unregister_code16(KC_9);
       }
       break;
     case A_NUM_YI:
       if(record->event.pressed) {
-        register_code(KC_0);
+        register_code16(KC_0);
       } else {
-        unregister_code(KC_0);
+        unregister_code16(KC_0);
       }
       break;
     case A_BASE_ATY:
@@ -697,58 +725,58 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
     case A_BASE_SO:
       if(record->event.pressed) {
-        register_code(KC_ESC);
+        register_code16(KC_ESC);
       } else {
-        unregister_code(KC_ESC);
+        unregister_code16(KC_ESC);
       }
       break;
     case A_NUM_SO:
       if(record->event.pressed) {
-        register_code(KC_ESC);
+        register_code16(KC_ESC);
       } else {
-        unregister_code(KC_ESC);
+        unregister_code16(KC_ESC);
       }
       break;
     case A_SYM_SO:
       if(record->event.pressed) {
-        register_code(KC_ESC);
+        register_code16(KC_ESC);
       } else {
-        unregister_code(KC_ESC);
+        unregister_code16(KC_ESC);
       }
       break;
     case A_BRAC_SO:
       if(record->event.pressed) {
-        register_code(KC_ESC);
+        register_code16(KC_ESC);
       } else {
-        unregister_code(KC_ESC);
+        unregister_code16(KC_ESC);
       }
       break;
     case A_NAV_SO:
       if(record->event.pressed) {
-        register_code(KC_ESC);
+        register_code16(KC_ESC);
       } else {
-        unregister_code(KC_ESC);
+        unregister_code16(KC_ESC);
       }
       break;
     case A_MOU_SO:
       if(record->event.pressed) {
-        register_code(KC_ESC);
+        register_code16(KC_ESC);
       } else {
-        unregister_code(KC_ESC);
+        unregister_code16(KC_ESC);
       }
       break;
     case A_CUSTOM_SO:
       if(record->event.pressed) {
-        register_code(KC_ESC);
+        register_code16(KC_ESC);
       } else {
-        unregister_code(KC_ESC);
+        unregister_code16(KC_ESC);
       }
       break;
     case A_BASE_AYIO:
       if(record->event.pressed) {
-        register_code(KC_CAPS);
+        register_code16(KC_CAPS);
       } else {
-        unregister_code(KC_CAPS);
+        unregister_code16(KC_CAPS);
       }
       break;
   }

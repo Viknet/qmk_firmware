@@ -14,11 +14,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         if (!is_shift_lock_active) {
           is_shift_lock_active = true;
-          register_code(KC_LSFT);
+          register_code16(KC_LSFT);
         }
         else{
           is_shift_lock_active = false;
-          unregister_code(KC_LSFT);
+          unregister_code16(KC_LSFT);
         }
       }
     break;
@@ -30,20 +30,25 @@ for(i in 1:dim(data)[1]){
   actionDown <- toString(data[i,3])
   actionUp <- ""
   if (grepl("tap_code", actionDown, fixed = TRUE)){
-    actionUp <- sub("tap_code", "unregister_code", actionDown)
-    actionDown <- sub("tap_code", "register_code", actionDown)
+    actionUp <- sub("tap_code", "unregister_code16", actionDown)
+    actionDown <- sub("tap_code", "register_code16", actionDown)
   }
   if(!(actionDown==""|actionDown=="NA")){
     for(j in 1:length(layer)){
       str = paste(str, "    case A_", layer[j], "_", key, ":\n", sep="")
-      str = paste(str, "      if(record->event.pressed) {\n", sep="")
-      str = paste(str, "        ", actionDown, ";\n", sep="")
-      if(!(actionUp==""|actionUp=="NA")){
-        str = paste(str, "      } else {\n", sep="")
-        str = paste(str, "        ", actionUp, ";\n", sep="")
+      if (grepl("action_tapping_process", actionDown, fixed = TRUE)) {
+        str = paste(str, "      ", actionDown, ";\n", sep="")
+        str = paste(str, "      break;\n", sep="")
+      } else {
+        str = paste(str, "      if(record->event.pressed) {\n", sep="")
+        str = paste(str, "        ", actionDown, ";\n", sep="")
+        if(!(actionUp==""|actionUp=="NA")){
+          str = paste(str, "      } else {\n", sep="")
+          str = paste(str, "        ", actionUp, ";\n", sep="")
+        }
+        str = paste(str, "      }\n", sep="")
+        str = paste(str, "      break;\n", sep="")
       }
-      str = paste(str, "      }\n", sep="")
-      str = paste(str, "      break;\n", sep="")
     }
   }
 }

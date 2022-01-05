@@ -1,0 +1,9 @@
+#define OLED_FONT_H "glcdfont.c"
+#define OLED_FONT_WIDTH 6
+#define OLED_FONT_HEIGHT 8
+#define OLED_FONT_END 192
+
+#define ONESHOT_TAP_TOGGLE 2
+#define ONESHOT_TIMEOUT 1000
+#define COMBO_TERM 100
+#define TAPPING_TERM 300
