@@ -34,8 +34,8 @@
 #define SOFT_SERIAL_PIN D2
 
 #define RGB_DI_PIN D3
-#define RGBLED_SPLIT { 28, 28 }
-#define RGBLED_NUM 56
+#define RGBLED_SPLIT { 27, 27 }
+#define RGBLED_NUM 54
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
